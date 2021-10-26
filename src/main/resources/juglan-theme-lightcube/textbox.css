@@ -1,0 +1,47 @@
+input[sclass~="textbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	margin: 2px 2px 2px 2px;
+	padding: 0 0.25em 0 0.25em;
+	background-color: #ffffff;
+	
+	border-width: 0.15em;
+	border-color: #999999;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: solid;
+	border-left-style: hidden;
+	outline: none;
+	font-size: 1em;
+}
+
+input[sclass~="textbox"][sclass~="large"] {
+	font-size: 1.3em;
+}
+
+input[sclass~="textbox"][sclass~="small"] {
+	font-size: 0.8em;
+}
+
+input[sclass~="textbox"]:disabled {
+	opacity: 0.5;
+}
+
+input[sclass~="textbox"]:not(:disabled):focus {
+	background-color: #f9f9f9;
+}
+
+input[sclass~="textbox"][sclass~="red"] {
+	border-color: #ff0000;
+}
+
+input[sclass~="textbox"][sclass~="green"] {
+	border-color: #00cc00;
+}
+
+div[sclass~="textbox-container"] {
+	display: flex;
+	flex-direction: column;
+}

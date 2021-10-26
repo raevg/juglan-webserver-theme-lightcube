@@ -1,0 +1,48 @@
+button[sclass~="button"] {
+	background-color: #d6d6d6;
+	color: #000000;
+	margin: 2px 2px 2px 2px;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: 0.2em solid transparent;
+	outline: none;
+}
+
+button[sclass~="button"]:not(:disabled):hover {
+	border: 0.2em solid #000000 !important;
+	color: #000000 !important;
+}
+
+button[sclass~="button"]:not(:disabled):focus {
+	border: 0.2em solid #999999 !important;
+}
+
+button[sclass~="button"]:not(:disabled):active {
+	background-color: #000000 !important;
+	color: #bfbfbf !important;
+}
+
+button[sclass~="button"]:disabled {
+  opacity: 0.6;
+  /* cursor: not-allowed; */
+}
+
+/* styles */
+
+button[sclass~="button"][sclass~="outline"] {
+	background-color: #ffffff;
+	color: #000000;
+	border: 0.2em solid #d6d6d6;
+}
+
+button[sclass~="button"][sclass~="small"] {
+	padding: 0.2em 0.3em 0.2em 0.3em;
+	font-size: 80%;
+}
+
+button[sclass~="button"][sclass~="large"] {
+	padding: 0.6em 0.7em 0.6em 0.7em;
+	font-size: 120%;
+}

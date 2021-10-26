@@ -1,0 +1,46 @@
+input[type="checkbox"][sclass~="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	background-color: #d6d6d6;
+	border: 2px solid transparent;
+	padding: 7px;
+	position: relative;
+	outline: none;
+}
+
+input[type="checkbox"][sclass~="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 18px;
+	position: absolute;
+	top: -4px;
+	left: 0px;
+	color: #000000;
+}
+
+input[type="checkbox"][sclass~="checkbox"]:disabled {
+	opacity: 0.5;
+}
+
+input[type="checkbox"][sclass~="checkbox"]:not(:disabled):focus {
+	border: 2px solid #999999 !important;
+}
+
+input[type="checkbox"][sclass~="checkbox"]:not(:disabled):hover {
+	border: 2px solid #000000 !important;
+}
+
+/* container for checkbox and corresponding label */
+
+div[sclass~="checkbox-container"] {
+	display: flex;
+}
+
+div[sclass~="checkbox-container"] > input[type="checkbox"][sclass~="checkbox"] {
+	align-self: center;
+}
+
+div[sclass~="checkbox-container"] > label {
+	align-self: center;
+}

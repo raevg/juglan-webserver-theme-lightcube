@@ -1,0 +1,47 @@
+div[sclass~="progressbar"] {
+	background-color: #e6e6e6;
+	height: 0.8em;
+	position: relative;
+	width: 240px;
+}
+
+div[sclass~="progressbar"] > [sclass~="bar"] {
+	background-color: #999999;
+	height: 100%;
+	width: calc(var(--progressbar-value) * 100%);
+	transition: 0.1s width linear;
+}
+
+div[sclass~="progressbar"] > [sclass~="text"] {
+	visibility: hidden;
+}
+
+div[sclass~="progressbar"][sclass~="small"] {
+	height: 0.6em;
+}
+
+div[sclass~="progressbar"][sclass~="large"] {
+	height: 1.2em;
+}
+
+div[sclass~="progressbar"] > [sclass~="text"] {
+	font-size: 0.7em;
+	color: #000000;
+	position: absolute;
+	visibility: visible;
+	top: 0em;
+	left: calc(var(--progressbar-value) * 50%);
+	transform: translateX(-50%);
+	transition: 0.1s width linear;
+}
+
+div[sclass~="progressbar"][sclass~="large"] > [sclass~="text"] {
+	font-size: 1em;
+	color: #000000;
+	position: absolute;
+	visibility: visible;
+	top: 0.05em;
+	left: calc(var(--progressbar-value) * 50%);
+	transform: translateX(-50%);
+	transition: 0.1s width linear;
+}

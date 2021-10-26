@@ -1,0 +1,6 @@
+
+
+div[sclass~="textarea-container"] {
+	display: flex;
+	flex-direction: column;
+}

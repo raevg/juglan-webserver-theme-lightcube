@@ -1,0 +1,11 @@
+[sclass~="full-width"] {
+	width: 100% !important;
+}
+
+[sclass~="hidden"] {
+	display: none !important;
+}
+
+[sclass~="invisible"] {
+	visibility: hidden !important;
+}

@@ -1,0 +1,43 @@
+input[type="radio"][sclass~="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	background-color: #d6d6d6;
+	border: 2px solid transparent;
+	padding: 7px;
+	position: relative;
+	outline: none;
+}
+
+input[type="radio"][sclass~="radio"]:checked:after {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 12px;
+	height: 12px;
+	background-color: #000000;
+}
+
+input[type="radio"][sclass~="radio"]:focus {
+	border: 2px solid #999999 !important;
+}
+
+input[type="radio"][sclass~="radio"]:hover {
+	border: 2px solid #000000 !important;
+}
+
+/* container for radio and corresponding label */
+
+div[sclass~="radio-container"] {
+	display: flex;
+}
+
+div[sclass~="radio-container"] > input[type="radio"][sclass~="radio"] {
+	align-self: center;
+}
+
+div[sclass~="radio-container"] > label {
+	align-self: center;
+}
